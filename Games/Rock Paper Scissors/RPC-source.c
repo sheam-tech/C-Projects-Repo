@@ -7,12 +7,12 @@
 
 #include <time.h>
 
-void delay(int number)
-{
-    int milliseconds = 1000 * number;
-    clock_t starttime = clock();
-    while (clock() < starttime + milliseconds);
-}
+// void delay(int number)
+// {
+//     int milliseconds = 1000 * number;
+//     clock_t starttime = clock();
+//     while (clock() < starttime + milliseconds);
+// }
 
 void winnerfunc(int robo,int hum){
 
@@ -72,7 +72,7 @@ int main()
         }
         printf("\n--------------");
         printf("\n--------------");
-        delay(.5);
+        // delay(.5);
 
     }
     winnerfunc(tp_robot,tp_human);
