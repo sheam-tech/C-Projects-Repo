@@ -25,15 +25,17 @@ void winnerfunc(int robo,int hum)
 }
 int main()
 {
-    int robot,num,i,tp_human,tp_robot;
+    int robot,num,i,tp_human,tp_robot,repeat;
     char human;
+    printf("\n\n--------------------------------Welcome to the Rock-Paper-Scissor Game!--------------------------------\n\n");
+    start:
     tp_human=0;
     tp_robot=0;
     printf("Enter how many times you want to play:");
     scanf("%d",&num);
     fflush(stdin);
-    printf("---------------------Lets start!---------------------");
-    printf("\nNote: You will get penalty if you input invalid characters.\n");
+    printf("\n---------------------Lets start!---------------------\n");
+    printf("\nNote: You will get penalty if you input invalid characters.\n\n");
 
     for(i=0; i<num; i++)
     {   fflush(stdin);
@@ -98,5 +100,15 @@ int main()
         sleep(1);
     }
     winnerfunc(tp_robot,tp_human);
-    return 0;
+    printf("\n\n--------------------------------\n\n");
+    sleep(1);
+    printf("Want to Play Again?\n1. Yes\nEnter any other key to exit\n");
+    scanf("%d",&repeat);
+    if(repeat==1){
+        goto start;
+    }else{
+        printf("Thank You!\nCopyright@sheam");
+         return 0;
+    }
+
 }
