@@ -1,4 +1,4 @@
-# Welcome to the source file of RPS Game ver:1.1.
+# Welcome to the source file of RPS Game ver:1.2.
 
 It is a simple Rock-Paper-Scissor game made by Raw C programming language.
 
